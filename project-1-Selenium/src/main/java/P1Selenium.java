@@ -28,9 +28,9 @@ public class P1Selenium {
 
     void postForm(String operation, double number1, double number2) {
         this.driver.get("http://localhost:9000");
-        WebElement inputElem = driver.findElement(By.id(operation+"_num_1")); // we got it by id "word-input"
+        WebElement inputElem = driver.findElement(By.id(operation+"_num_1"));
         inputElem.sendKeys(String.valueOf(number1));
-        WebElement inputElem2 = driver.findElement(By.id(operation+"_num_2")); // we got it by id "word-input"
+        WebElement inputElem2 = driver.findElement(By.id(operation+"_num_2"));
         inputElem2.sendKeys(String.valueOf(number2));
         WebElement btn = driver.findElement(By.id(operation+"_btn"));
         btn.click();
