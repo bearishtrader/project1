@@ -1,0 +1,40 @@
+<html> <!-- this is the root tag of an html file -->
+    <head><!-- this is for metadata -->
+        <title>Project 1 Calculator</title>        
+    </head>
+    <body>        
+        <h1>Project 1 Calculator</h1>        
+        <div>            
+            <h5>Add</h5>
+            <form action="http://localhost:9000/add" method="post" target="add_result">
+                <input type="number" step="any" id="add_num_1" name="add_num_1"><b>+</b><input type="number" step="any" id="add_num_2" name="add_num_2">
+                <button id="add_btn" type="submit">Add</button>
+            </form>
+            <iframe name="add_result" id="add_result"></iframe>
+        </div>
+        <div>           
+            <h5>Subtract</h5> 
+            <form action="http://localhost:9000/subtract" method="post" target="subtract_result">
+                <input type="number" step="any" id="subtract_num_1" name="subtract_num_1"><b>-</b><input type="number" step="any" id="subtract_num_2" name="subtract_num_2">
+                <button id="subtract_btn" type="submit">Subtract</button>
+            </form>
+            <iframe name="subtract_result" id="subtract_result"></iframe>
+        </div>
+        <div>           
+            <h5>Multiply</h5> 
+            <form action="http://localhost:9000/multiply" method="post" target="multiply_result">
+                <input type="number" step="any" id="multiply_num_1" name="multiply_num_1"><b>*</b><input type="number" step="any" id="multiply_num_2" name="multiply_num_2">
+                <button id="multiply_btn" type="submit">Multiply</button>
+            </form>
+            <iframe name="multiply_result" id="multiply_result"></iframe>
+        </div>
+        <div>        
+            <h5>Divide</h5>    
+            <form action="http://localhost:9000/divide" method="post" target="divide_result">
+                <input type="number" step="any" id="divide_num_1" name="divide_num_1"><b>/</b><input type="number" step="any" id="divide_num_2" name="divide_num_2">
+                <button id="divide_btn" type="submit">Divide</button>
+            </form>
+            <iframe name="divide_result" id="divide_result"></iframe>
+        </div>
+    </body>
+</html>
